@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+@font-face {
+	font-family: "Cambria";
+	src: url($directory-font + "Cambria.ttf");
+}
+
+@font-face {
+	font-family: "Script";
+	src: url($directory-font + "Script.ttf");
+}
+
+* {
+	cursor: default;
+	box-sizing: border-box;
+	font-family: Cambria;
+	scrollbar-width: thin;
+	scrollbar-color: $scrollbar-foreground-color $scrollbar-background-color;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: $background-color;
+	color: $text-color;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@import "elements.scss";
+
+.root {
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, min-content);
+	grid-gap: 5px;
+	justify-items: center;
+	align-items: center;
+	
+	@media screen and (max-width: 1024px) {
+		width: 90%;
+	}
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 670px) {
+	}
+	@media screen and (max-width: 440px) {
+	}
+	@media screen and (max-height: 500px) {
+	}
+}

@@ -1,0 +1,26 @@
+@import "../styles/variables.scss";
+@import "../styles/elements.scss";
+
+.pages-wrapper {
+	grid-row: span 1;
+	grid-column: span 1;
+
+	display: grid;
+	grid-template-columns: repeat(3, 40px);
+	grid-template-rows: min-content;
+	grid-gap: 5px;
+
+	& > .pageNum {
+		text-align: center;
+		font-size: 0.8em;
+	}
+
+	& > button {
+		width: 40px;
+
+		&:disabled {
+			color: #2d2d2d;
+			cursor: default;
+		}
+	}
+}

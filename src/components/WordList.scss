@@ -1,0 +1,56 @@
+@import "../styles/variables.scss";
+@import "../styles/elements.scss";
+
+.wordlist-wrapper {
+	grid-row: span 1;
+	grid-column: span 1;
+
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	grid-gap: 5px;
+
+	@media screen and (max-width: 1024px) {
+	}
+	@media screen and (max-width: 768px) {
+	}
+	@media screen and (max-width: 670px) {
+	}
+	@media screen and (max-width: 440px) {
+	}
+	@media screen and (max-height: 500px) {
+	}
+
+	& > .word {
+		grid-column: span 1;
+		grid-row: span 1;
+		background-color: $background-color-light;
+		padding: 5px;
+
+		cursor: pointer;
+		white-space: nowrap;
+		word-wrap: break-word;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		& > * {
+			padding-right: 5px;
+			cursor: pointer;
+		}
+
+		& > .word {
+			color: $text-color-red;
+		}
+
+		& > .sumtype {
+			font-size: 0.9em;
+		}
+
+		& > .meaning {
+			color: $text-color;
+			font-size: 0.9em;
+		}
+	}
+}

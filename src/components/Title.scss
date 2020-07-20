@@ -1,0 +1,36 @@
+@import "../styles/variables.scss";
+@import "../styles/elements.scss";
+
+.title-wrapper {
+	grid-row: span 1;
+	grid-column: span 1;
+	width: 100%;
+
+	@media screen and (max-width: 1024px) {
+	}
+	@media screen and (max-width: 768px) {
+	}
+	@media screen and (max-width: 670px) {
+	}
+	@media screen and (max-width: 440px) {
+	}
+	@media screen and (max-height: 500px) {
+	}
+
+	& > .title {
+		display: table;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		font-size: 4em;
+	}
+
+	& > .subtitle {
+		display: table;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding-bottom: 8px;
+		font-size: 0.8em;
+	}
+}

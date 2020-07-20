@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+@import "../styles/elements.scss";
+
+.inputbar-wrapper {
+	grid-row: span 1;
+	grid-column: span 1;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, 20px);
+	grid-gap: 5px;
+
+	& > * {
+		grid-row: span 1;
+		grid-column: span 1;
+		//background-color: $background-color-light;
+	}
+}

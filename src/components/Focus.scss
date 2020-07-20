@@ -1,0 +1,136 @@
+@import "../styles/variables.scss";
+@import "../styles/elements.scss";
+
+.focus-wrapper {
+	grid-row: span 1;
+	grid-column: span 1;
+	background-color: $background-color-light;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: min-content min-content min-content 1fr;
+	grid-template-rows: min-content min-content min-content 1fr;
+	grid-gap: 5px;
+
+	align-items: center;
+
+	padding: 8px 4px;
+
+	@media screen and (max-width: 1024px) {
+	}
+	@media screen and (max-width: 768px) {
+	}
+	@media screen and (max-width: 670px) {
+	}
+	@media screen and (max-width: 440px) {
+	}
+	@media screen and (max-height: 500px) {
+	}
+
+	& > .word {
+		font-size: 1.6em;
+		padding: 2px 8px;
+		color: $text-color-red;
+		height: 32px;
+
+		grid-row: span 1;
+		grid-column: span 1;
+	}
+
+	& > .script {
+		font-family: Script;
+		font-weight: normal;
+
+		font-size: var(--font-size);
+		padding: var(--padding);
+		letter-spacing: var(--letter-spacing);
+		line-height: var(--line-height);
+
+		height: auto;
+
+		grid-row: span 1;
+		grid-column: span 1;
+	}
+
+	& > .type {
+		font-size: 0.9em;
+
+		grid-row: span 1;
+		grid-column: span 1;
+	}
+
+	& > .type {
+		font-size: 0.9em;
+
+		grid-row: span 1;
+		grid-column: span 1;
+	}
+
+	& > .meanings {
+		padding: 2px 30px;
+		height: auto;
+
+		grid-row: span 1;
+		grid-column: span 4;
+	}
+
+	& > .conjugations {
+		height: auto;
+		min-height: 23px;
+		padding: 4px 14px;
+
+		grid-row: span 1;
+		grid-column: span 4;
+
+		& > * {
+			padding-right: 5px;
+			font-size: 0.9em;
+		}
+
+		& > .title {
+			font-size: 1em;
+			text-decoration: underline;
+		}
+
+		& > .aspect {
+			font-size: 0.8em;
+		}
+
+		& > .tense,
+		& > .aspect {
+			& > .name {
+				padding-right: 5px;
+			}
+
+			& > .word {
+				font-style: italic;
+				color: $text-color-red;
+				padding-right: 10px;
+			}
+		}
+	}
+
+	& > .etymologies {
+		height: auto;
+		min-height: 23px;
+		padding: 4px 14px;
+
+		grid-row: span 1;
+		grid-column: span 4;
+
+		& > * {
+			padding-right: 5px;
+			font-size: 0.9em;
+		}
+
+		& > .title {
+			font-size: 1em;
+			text-decoration: underline;
+		}
+
+		& > .word {
+			font-style: italic;
+			color: $text-color-red;
+		}
+	}
+}

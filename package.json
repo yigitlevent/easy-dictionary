@@ -1,0 +1,52 @@
+{
+	"name": "easy-dictionary",
+	"version": "0.1.0",
+	"description": "A small app to create custom dictionaries.",
+	"author": "Yiğit Levent",
+	"license": "MIT",
+	"homepage": ".",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yigitlevent/easy-dictionary.git"
+	},
+	"bugs": {
+		"url": "https://github.com/yigitlevent/easy-dictionary/issues"
+	},
+	"private": true,
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"dependencies": {
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.5.0",
+		"@testing-library/user-event": "^7.2.1",
+		"@types/jest": "^24.9.1",
+		"@types/node": "^12.12.50",
+		"@types/node-sass": "^4.11.1",
+		"@types/react": "^16.9.43",
+		"@types/react-dom": "^16.9.8",
+		"node-sass": "^4.14.1",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-scripts": "3.4.1",
+		"typescript": "^3.7.5"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
