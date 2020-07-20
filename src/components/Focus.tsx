@@ -68,10 +68,10 @@ class Focus extends React.Component<IStateProps, IState> {
 		for (let i in conjugationData.exceptions) {
 			let exception = conjugationData.exceptions[i];
 
-			if ("startsWith" in exception && exception.startsWith === conjugationWord[0]) {
+			if ("startsWith" in exception && conjugationWord.startsWith(exception.startsWith)) {
 				hasException = true;
 			}
-			else if ("endsWith" in exception && exception.endsWith === conjugationWord[conjugationWord.length - 1]) {
+			else if ("endsWith" in exception && conjugationWord.endsWith(exception.endsWith)) {
 				hasException = true;
 			}
 

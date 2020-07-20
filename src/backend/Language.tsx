@@ -116,8 +116,16 @@ export default class Language {
 	}
 
 	getScriptText(str: string): string {
-		if (this.scriptRules.convertUpperCase) { str = str.toLocaleUpperCase(); }
-		if (this.scriptRules.convertLowerCase) { str = str.toLocaleLowerCase(); }
+		switch (this.scriptRules.convertCase) {
+			case "upperCase":
+				str = str.toLocaleUpperCase();
+				break;
+			case "lowerCase":
+				str = str.toLocaleLowerCase();
+				break;
+			case "none":
+				break;
+		}
 
 		for (let i in this.scriptRules.replaceLetters) {
 			str = str.replace(new RegExp(i, "g"), this.scriptRules.replaceLetters[i]);
