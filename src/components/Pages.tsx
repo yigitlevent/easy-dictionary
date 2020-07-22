@@ -3,7 +3,7 @@ import React from "react";
 import "./Pages.scss";
 
 import { IStateProps, IState } from "../index";
-import Language from "../backend/Language";
+import Language from "../Language";
 
 class Pages extends React.Component<IStateProps, IState> {
 	render() {

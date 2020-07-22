@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import * as serviceWorker from "./backend/serviceWorker";
+import * as serviceWorker from "./serviceWorker";
 
 import Title from "./components/Title";
 import Focus from "./components/Focus";
@@ -11,8 +11,8 @@ import Pages from "./components/Pages";
 
 import "./styles/index.scss";
 
-import Language from "./backend/Language";
-import { UserLang } from "./backend/UserLang";
+import Language from "./Language";
+import { UserLang } from "./UserLang";
 
 export interface IStateProps {
 	handler?: any;

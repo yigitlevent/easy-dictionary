@@ -1,4 +1,4 @@
-import { isDev } from "../index";
+import { isDev } from "./index";
 
 export interface word {
 	active: boolean;

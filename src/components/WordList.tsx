@@ -3,7 +3,7 @@ import React from "react";
 import "./WordList.scss";
 
 import { IStateProps, IState } from "../index";
-import Language from "../backend/Language";
+import Language from "../Language";
 
 class WordList extends React.Component<IStateProps, IState> {
 	render() {

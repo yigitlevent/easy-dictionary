@@ -3,7 +3,7 @@ import React from "react";
 import "./InputBar.scss";
 
 import { IStateProps, IState } from "../index";
-import Language from "../backend/Language";
+import Language from "../Language";
 
 class InputBar extends React.Component<IStateProps, IState> {
 	render() {

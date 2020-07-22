@@ -16,7 +16,7 @@ Run `npm start` and navigate to `localhost:3000` to start.
 
 For now, only one user defined languages can be added, but ability to uploading and downloading languages is planned.
 
-To change the defined language, user must change the `src/backend/UserLang.ts` file. Most Basic version of that file is shown below.
+To change the defined language, user must change the `src/UserLang.ts` file. Most Basic version of that file is shown below.
 
 ```
 export const UserLang: any = {

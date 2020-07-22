@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 import "./Focus.scss";
 
 import { IStateProps, IState } from "../index";
-import Language from "../backend/Language";
+import Language from "../Language";
 
 /*const ff: any = {
 	"word": "aesten",
@@ -56,7 +56,7 @@ class Focus extends React.Component<IStateProps, IState> {
 
 		let newWord: string = "";
 		if (type === "suffix") { newWord = oldWord + affix; }
-		else if (type === "prefix") { newWord = affix + oldWord; }
+		else if (type === "prefix") { newWord = affix + oldWord.toLocaleLowerCase(); }
 
 		return newWord;
 	}
